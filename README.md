@@ -239,35 +239,6 @@ pip list | grep -E "(fastapi|openai|telegram)"
 - **Architecture Analysis**: Upload system diagrams for analysis
 - **Documentation**: Summarize technical PDFs
 
-## 🚀 Deployment (Optional)
-
-### Deploy to Railway (Recommended)
-```bash
-# Install Railway CLI
-npm install -g @railway/cli
-
-# Login and deploy
-railway login
-railway init
-railway up
-
-# Set environment variables in Railway dashboard
-# Then set webhook: https://your-app.railway.app/webhook/telegram
-```
-
-### Deploy to Render
-1. Connect your GitHub repo to Render
-2. Add environment variables in dashboard
-3. Deploy automatically on git push
-
-### Deploy to Heroku
-```bash
-heroku create your-app-name
-heroku config:set OPENAI_API_KEY=your_key
-heroku config:set TELEGRAM_BOT_TOKEN=your_token
-git push heroku main
-```
-
 ## 🔗 API Endpoints
 
 When running the server, you can access:
@@ -287,18 +258,6 @@ When running the server, you can access:
 - **🔧 Customizable**: Easy to modify and extend for your needs
 - **📱 Mobile Ready**: Works perfectly on phones and tablets
 - **🔒 Secure**: Your data is processed securely and not stored
-
-## 🆘 Need Help?
-
-### Quick Fixes
-- **Not working?** Check your `.env` file has the correct API keys
-- **Bot not responding?** Make sure you sent `/start` to your Telegram bot
-- **Errors?** Check the terminal output for detailed error messages
-
-### Get Support
-- **📖 Documentation**: Check the `/docs` endpoint when running
-- **🐛 Issues**: Report problems via GitHub Issues
-- **💬 Community**: Join developer communities for FastAPI and OpenAI
 
 ## 🎉 You're Ready!
 
